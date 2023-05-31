@@ -1,0 +1,804 @@
+.client-login {
+  .login-lng-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 20px;
+    margin-top: 20px;
+    img {
+      padding-left: 20px;
+      display: none;
+    }
+    .ant-select-selector {
+      border: none;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 4px;
+      opacity: 1;
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+    }
+  }
+  .clientlogin-body {
+    display: grid;
+    grid-template-columns: 844px 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 1366px;
+    min-height: 100vh;
+    margin: auto;
+  
+    .bgContents {
+      padding-left: 80px;
+  
+      p {
+        max-width: 409px;
+        padding-top: 14px;
+      }
+  
+      .loginprime {
+        width: 130px;
+        height: 80px;
+        margin-top: 90px;
+      }
+      .sm-bg-imag {
+        display: none;
+      }
+  
+      .bg-imag {
+        width: 586px;
+        height: 363px;
+        margin-left: -30px;
+      }
+    }
+  
+    .login-card {
+      padding: 5px 42px;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000005;
+      border: 1px solid #eeeeee;
+      border-radius: 6px;
+      width: 346px;
+      height: auto;
+  
+      .spacedLetter {
+        letter-spacing: 4px;
+      }
+  
+      .radio-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+      }
+  
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+      }
+  
+      .login-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+        padding-top: 10px;
+      }
+  
+      .signup-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #9b9b9b;
+        padding-bottom: 10px;
+  
+        a {
+          color: #f5cb5c;
+          padding: 7px;
+        }
+      }
+  
+      .separator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        .line {
+          height: 2px;
+          flex: 1;
+          background-color: #e2e2e2;
+        }
+  
+        p {
+          padding: 10px;
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+  
+  .clientlogin-body::before {
+    width: 800px;
+    min-height: 134vh;
+    position: absolute;
+    content: "";
+    background-color: #e8eddf;
+    z-index: -1;
+    top: 0px;
+    transform: rotate(15deg);
+    border-top-right-radius: 130px;
+    left: -148px;
+  }
+
+  .clientlogin-body::after {
+    width: 800px;
+    min-height: 134vh;
+    position: absolute;
+    content: "";
+    background-color: #f5cb5c;
+    z-index: -1;
+    top: 0px;
+    transform: rotate(24deg);
+    border-top-right-radius: 130px;
+    left: -303px;
+  }
+}
+
+//media query for less then 600px sxreen
+// @media (max-width: 600px) {
+//   .login-wrapper {
+//     .login-body {
+//       .login-heading {
+//         width: 100%;
+//         height: 78px;
+//         //   font: normal normal 700 57px/78px Open Sans !important;
+//         letter-spacing: 0px;
+//         color: #011a3a;
+//         opacity: 1;
+//         margin-top: 5vh;
+//         font-size: large;
+//       }
+
+//       .login-card {
+//         padding: 36px 20px 41px 20px;
+//         margin-top: 65px;
+//         background: #ffffff 0 0 no-repeat padding-box;
+//         box-shadow: 0 1px 20px #00000014;
+//         width: 100%;
+//         height: 406px;
+
+//         input[type="text"] {
+//           height: 40px;
+//         }
+
+//         input[type="password"] {
+//           height: 40px !important;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// OTP SCSS
+
+.login-otp-wrapper {
+  .lng-btn {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-right: 42px;
+    margin-top: 20px;
+    img {
+      display: none;
+    }
+    .ant-select-selector {
+      border: none;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 4px;
+      opacity: 1;
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+    }
+  }
+  .login-body {
+    display: flex;
+    .login-heading {
+      margin-left: 119px;
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+      .sm-pic {
+        display: none;
+      }
+      p {
+        width: 500px;
+      }
+      .logo {
+        width: 177px;
+        height: 66px;
+      }
+      img {
+        width: 586px;
+        height: 363px;
+      }
+    }
+    .login-card {
+      width: 320px;
+      height: 360px;
+      box-shadow: 0px 3px 6px #00000005;
+      border: 1px solid #eeeeee;
+      border-radius: 6px;
+      opacity: 1;
+      margin-top: 145px;
+      margin-left: 183px;
+      .otp-input {
+        padding-top: 10px;
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px !important;
+          input {
+            background: #f9f9f8;
+            border: #d8d5cd;
+            border-radius: 2px;
+            border: 1px solid #d8d5cd;
+            opacity: 1;
+          }
+        }
+      }
+      .otp-btn-submit {
+        width: 186px;
+        height: 40px;
+        margin-top: 43px;
+        background: #f5cb5c 0% 0% no-repeat padding-box;
+        border-radius: 3px;
+        opacity: 1;
+        box-shadow: none;
+      }
+      .links {
+        padding-top: 40px;
+        padding-right: 15px;
+        padding-left: 15px;
+        align-items: center;
+        a {
+          text-decoration: underline;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+  .client-login {
+    .login-lng-btn {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 20px;
+      margin-top: 20px;
+      img {
+        padding-left: 20px;
+        display: block;
+      }
+      .ant-select-selector {
+        border: none;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 4px;
+        opacity: 1;
+        backdrop-filter: blur(22px);
+        -webkit-backdrop-filter: blur(22px);
+      }
+    }
+    .clientlogin-body {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 100vh;
+      margin: auto;
+
+      .bgContents {
+        padding-left: 20px;
+
+        p {
+          max-width: 409px;
+          // margin-left: 45px;
+          padding-top: 14px;
+        }
+
+        .loginprime {
+          width: 130px;
+          height: 80px;
+          margin-top: 90px;
+          display: none;
+        }
+        .sm-bg-imag {
+          width: 100%;
+          height: 363px;
+          margin-left: -30px;
+          display: block;
+        }
+
+        .bg-imag {
+          width: 100%;
+          height: 363px;
+          margin-left: -30px;
+          display: none;
+        }
+      }
+
+      .login-card {
+        padding: 5px 42px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000005;
+        border: 1px solid #eeeeee;
+        border-radius: 6px;
+        width: 346px;
+        height: auto;
+        margin-top: 41px;
+
+        .spacedLetter {
+          letter-spacing: 4px;
+        }
+
+        .radio-buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 0px;
+          padding-left: 20px;
+          padding-bottom: 20px;
+        }
+
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 15px;
+        }
+
+        .login-icons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 36px;
+          padding-top: 10px;
+        }
+
+        .signup-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #9b9b9b;
+          padding-bottom: 10px;
+
+          a {
+            color: #f5cb5c;
+            padding: 7px;
+          }
+        }
+
+        .separator {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .line {
+            height: 2px;
+            flex: 1;
+            background-color: #e2e2e2;
+          }
+
+          p {
+            padding: 10px;
+            margin-top: 0px;
+          }
+
+          // .empty-dev1 {
+          //     height: 3px;
+          //     flex: 1;
+          //     background-color: #000;
+          // }
+        }
+      }
+    }
+
+    .clientlogin-body::before {
+      width: 300px;
+      min-height: 100vh;
+      position: absolute;
+      content: "";
+      background-color: #e8eddf;
+      z-index: -1;
+      top: 43rem;
+      transform: rotate(15deg);
+      border-top-right-radius: 130px;
+      left: -148px;
+    }
+
+    .clientlogin-body::after {
+      width: 300px;
+      min-height: 100vh;
+      position: absolute;
+      content: "";
+      background-color: #f5cb5c;
+      z-index: -1;
+      top: 42rem;
+      transform: rotate(24deg);
+      border-top-right-radius: 130px;
+      left: -303px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .client-login {
+    .login-lng-btn {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 20px;
+      margin-top: 20px;
+      img {
+        padding-left: 20px;
+        display: block;
+      }
+      .ant-select-selector {
+        border: none;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 4px;
+        opacity: 1;
+        backdrop-filter: blur(22px);
+        -webkit-backdrop-filter: blur(22px);
+      }
+    }
+    .clientlogin-body {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 100vh;
+      margin: auto;
+
+      .bgContents {
+        padding-left: 0px;
+
+        p {
+          max-width: 409px;
+          // margin-left: 45px;
+          padding-top: 14px;
+        }
+
+        .loginprime {
+          width: 130px;
+          height: 80px;
+          margin-top: 90px;
+          display: none;
+        }
+        .sm-bg-imag {
+          width: 600px;
+          height: 363px;
+          margin-left: -30px;
+          display: block;
+        }
+
+        .bg-imag {
+          width: 100%;
+          height: 363px;
+          margin-left: -30px;
+          display: none;
+        }
+      }
+
+      .login-card {
+        padding: 5px 42px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000005;
+        border: 1px solid #eeeeee;
+        border-radius: 6px;
+        width: 346px;
+        height: auto;
+        margin-top: 41px;
+
+        .spacedLetter {
+          letter-spacing: 4px;
+        }
+
+        .radio-buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 0px;
+          padding-left: 20px;
+          padding-bottom: 20px;
+        }
+
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 15px;
+        }
+
+        .login-icons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 36px;
+          padding-top: 10px;
+        }
+
+        .signup-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #9b9b9b;
+          padding-bottom: 10px;
+
+          a {
+            color: #f5cb5c;
+            padding: 7px;
+          }
+        }
+
+        .separator {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .line {
+            height: 2px;
+            flex: 1;
+            background-color: #e2e2e2;
+          }
+
+          p {
+            padding: 10px;
+            margin-top: 0px;
+          }
+
+          // .empty-dev1 {
+          //     height: 3px;
+          //     flex: 1;
+          //     background-color: #000;
+          // }
+        }
+      }
+    }
+
+    .clientlogin-body::before {
+      width: 100%;
+      min-height: 100vh;
+      position: absolute;
+      content: "";
+      background-color: #e8eddf;
+      z-index: -1;
+      top: 46rem;
+      transform: rotate(15deg);
+      border-top-right-radius: 130px;
+      left: -148px;
+    }
+
+    .clientlogin-body::after {
+      width: 100%;
+      min-height: 100vh;
+      position: absolute;
+      content: "";
+      background-color: #f5cb5c;
+      z-index: -1;
+      top: 47rem;
+      transform: rotate(14deg);
+      border-top-right-radius: 130px;
+      left: -250px;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .client-login {
+    width: 1366px;
+    .login-lng-btn {
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      margin-right: 20px;
+      margin-top: 20px;
+      img {
+        display: none;
+      }
+      .ant-select-selector {
+        border: none;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 4px;
+        opacity: 1;
+        backdrop-filter: blur(22px);
+        -webkit-backdrop-filter: blur(22px);
+      }
+    }
+  }
+}
+@media (min-width: 1336px) {
+  .client-login {
+    .login-lng-btn {
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      margin-right: 20px;
+      margin-top: 20px;
+      img {
+        display: none;
+      }
+      .ant-select-selector {
+        border: none;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 4px;
+        opacity: 1;
+        backdrop-filter: blur(22px);
+        -webkit-backdrop-filter: blur(22px);
+      }
+    }
+    .clientlogin-body {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 150px;
+      padding-right: 200px;
+      width: 100%;
+      min-height: 100vh;
+      margin: auto;
+
+      .bgContents {
+        padding-left: 0px;
+
+        p {
+          max-width: 409px;
+          // margin-left: 45px;
+          padding-top: 14px;
+        }
+
+        .loginprime {
+          width: 130px;
+          height: 80px;
+          margin-top: 90px;
+          display: block;
+        }
+        .sm-bg-imag {
+          width: 600px;
+          height: 363px;
+          margin-left: -30px;
+          display: none;
+        }
+
+        .bg-imag {
+          width: 100%;
+          height: 500px;
+          margin-left: -30px;
+          display: block;
+        }
+      }
+      .login-card {
+        padding: 5px 42px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000005;
+        border: 1px solid #eeeeee;
+        border-radius: 6px;
+        width: 380px;
+        height: auto;
+        margin-top: 41px;
+      }
+    }
+  }
+}
+
+// OTP Page responsivness
+
+@media (min-width: 360px) and (max-width: 768px) {
+  .login-otp-wrapper {
+    .lng-btn {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 20px;
+      margin-top: 20px;
+      img {
+        padding-left: 20px;
+        display: block;
+      }
+      .ant-select-selector {
+        border: none;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 4px;
+        opacity: 1;
+        backdrop-filter: blur(22px);
+        -webkit-backdrop-filter: blur(22px);
+      }
+    }
+    .login-body {
+      display: flex;
+      flex-direction: column-reverse;
+      .login-heading {
+        margin-left: 20px;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        .sm-pic {
+          display: block;
+          width: 100%;
+          height: 363px;
+        }
+        p {
+          width: 100%;
+        }
+        .logo {
+          width: 177px;
+          height: 66px;
+          display: none;
+        }
+        img {
+          width: 100%;
+          height: 363px;
+          display: none;
+        }
+      }
+      .login-card {
+        width: 320px;
+        height: 360px;
+        box-shadow: 0px 3px 6px #00000005;
+        border: 1px solid #eeeeee;
+        border-radius: 6px;
+        opacity: 1;
+        margin-top: 100px;
+        margin-left: 37px;
+        // margin-right: 47px;
+
+        .otp-input {
+          padding-top: 10px;
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px !important;
+            input {
+              background: #f9f9f8;
+              border: #d8d5cd;
+              border-radius: 2px;
+              border: 1px solid #d8d5cd;
+              opacity: 1;
+            }
+          }
+        }
+        .otp-btn-submit {
+          width: 186px;
+          height: 40px;
+          margin-top: 43px;
+          background: #f5cb5c 0% 0% no-repeat padding-box;
+          border-radius: 3px;
+          opacity: 1;
+          box-shadow: none;
+        }
+        .links {
+          padding-top: 40px;
+          padding-right: 15px;
+          padding-left: 15px;
+          align-items: center;
+          a {
+            text-decoration: underline;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

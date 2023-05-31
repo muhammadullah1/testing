@@ -1,0 +1,183 @@
+.client-login {
+    // .login-lng-btn {
+    //   display: flex;
+    //   justify-content: end;
+    //   align-items: end;
+    //   margin-right: 20px;
+    //   margin-top: 20px;
+    //   img {
+    //     padding-left: 20px;
+    //     display: none;
+    //   }
+    //   .ant-select-selector {
+    //     border: none;
+    //     background: #ffffff 0% 0% no-repeat padding-box;
+    //     box-shadow: 0px 3px 6px #00000029;
+    //     border-radius: 4px;
+    //     opacity: 1;
+    //     backdrop-filter: blur(22px);
+    //     -webkit-backdrop-filter: blur(22px);
+    //   }
+    // }
+    // .clientlogin-body {
+    //   display: grid;
+    //   grid-template-columns: 844px 1fr;
+    //   justify-content: center;
+    //   align-items: center;
+    //   width: 1366px;
+    //   min-height: 100vh;
+    //   margin: auto;
+  
+    //   .bgContents {
+    //     padding-left: 80px;
+  
+    //     p {
+    //       max-width: 409px;
+    //       // margin-left: 45px;
+    //       padding-top: 14px;
+    //     }
+  
+    //     .loginprime {
+    //       width: 130px;
+    //       height: 80px;
+    //       margin-top: 90px;
+    //     }
+    //     .sm-bg-imag {
+    //       display: none;
+    //     }
+  
+    //     .bg-imag {
+    //       width: 586px;
+    //       height: 363px;
+    //       margin-left: -30px;
+    //     }
+    //   }
+  
+    //   .login-card {
+    //     padding: 5px 42px;
+    //     background: #ffffff 0% 0% no-repeat padding-box;
+    //     box-shadow: 0px 3px 6px #00000005;
+    //     border: 1px solid #eeeeee;
+    //     border-radius: 6px;
+    //     width: 346px;
+    //     height: auto;
+  
+    //     .spacedLetter {
+    //       letter-spacing: 4px;
+    //     }
+  
+    //     .radio-buttons {
+    //       display: flex;
+    //       justify-content: center;
+    //       align-items: center;
+    //       padding-top: 0px;
+    //       padding-left: 20px;
+    //       padding-bottom: 20px;
+    //     }
+  
+    //     p {
+    //       display: flex;
+    //       justify-content: center;
+    //       align-items: center;
+    //       margin-top: 15px;
+    //     }
+  
+    //     .login-icons {
+    //       display: flex;
+    //       justify-content: center;
+    //       align-items: center;
+    //       gap: 36px;
+    //       padding-top: 10px;
+    //     }
+  
+    //     .signup-link {
+    //       display: flex;
+    //       justify-content: center;
+    //       align-items: center;
+    //       color: #9b9b9b;
+    //       padding-bottom: 10px;
+  
+    //       a {
+    //         color: #f5cb5c;
+    //         padding: 7px;
+    //       }
+    //     }
+  
+    //     .separator {
+    //       display: flex;
+    //       align-items: center;
+    //       justify-content: center;
+  
+    //       .line {
+    //         height: 2px;
+    //         flex: 1;
+    //         background-color: #e2e2e2;
+    //       }
+  
+    //       p {
+    //         padding: 10px;
+    //         margin-top: 0px;
+    //       }
+  
+    //       // .empty-dev1 {
+    //       //     height: 3px;
+    //       //     flex: 1;
+    //       //     background-color: #000;
+    //       // }
+    //     }
+    //   }
+    // }
+  
+    // .clientlogin-body::before {
+    //   width: 800px;
+    //   min-height: 134vh;
+    //   position: absolute;
+    //   content: "";
+    //   background-color: #e8eddf;
+    //   z-index: -1;
+    //   top: 0px;
+    //   transform: rotate(15deg);
+    //   border-top-right-radius: 130px;
+    //   left: -148px;
+    // }
+  
+    // .clientlogin-body::after {
+    //   width: 800px;
+    //   min-height: 134vh;
+    //   position: absolute;
+    //   content: "";
+    //   background-color: #f5cb5c;
+    //   z-index: -1;
+    //   top: 0px;
+    //   transform: rotate(24deg);
+    //   border-top-right-radius: 130px;
+    //   left: -303px;
+    // }
+    
+    .clientlogin-body::before {
+        width: 800px;
+        min-height: 134vh;
+        position: absolute;
+        content: "";
+        background-color: #e8eddf;
+        z-index: -1;
+        top: 0px;
+        transform: rotate(-15deg); /* Update rotation to negative value */
+        border-top-left-radius: 130px; /* Update border radius property */
+        right: -148px; /* Update left to right */
+      }
+      
+      .clientlogin-body::after {
+        width: 800px;
+        min-height: 134vh;
+        position: absolute;
+        content: "";
+        background-color: #f5cb5c;
+        z-index: -1;
+        top: 0px;
+        transform: rotate(-24deg); /* Update rotation to negative value */
+        border-top-left-radius: 130px; /* Update border radius property */
+        right: -303px; /* Update left to right */
+      }
+      
+  }

@@ -1,0 +1,623 @@
+.templates-index {
+  .bread {
+    padding-left: 72px;
+    padding-top: 32px;
+  }
+  .template-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+    span {
+      color: #f5cb5c;
+      font-weight: bold;
+    }
+
+    p {
+      text-align: center;
+      width: 730px;
+    }
+  }
+}
+
+.templates-details {
+  background-color: #f5f8f6;
+  padding-bottom: 100px;
+  .page-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    .search-bar {
+      width: 447px;
+      height: 40px;
+      margin-top: 18px;
+      margin-left: 128px;
+      border-radius: 4px;
+      opacity: 1;
+      ::placeholder {
+        color: #5a5a5a;
+      }
+      .input-field:hover {
+      }
+    }
+    .select-inputs {
+      display: flex;
+      padding-right: 68px;
+      gap: 13px;
+      padding-top: 18px;
+      .select-custome-input1 {
+        gap: 2rem;
+        width: 177px;
+        height: 40px;
+        .ant-select {
+          &:hover {
+            border-color: #f5f8f6 !important;
+          }
+        }
+        .ant-select-arrow {
+          span {
+            color: black !important;
+          }
+        }
+      }
+      .select-custome-input2 {
+        gap: 2rem;
+        width: 144px;
+        height: 40px;
+      }
+      .select-custome-input3 {
+        gap: 2rem;
+        width: 117px;
+        height: 40px;
+        .ant-select {
+          &:hover {
+            border-color: #f5f8f6 !important;
+          }
+        }
+        .ant-select-arrow {
+          span {
+            color: black !important;
+          }
+        }
+      }
+      .share-btn {
+        width: 106px;
+        height: 40px;
+        transition: all 0.3s ease;
+        border: 1px solid #cfcfcf;
+        border-radius: 4px;
+        opacity: 1;
+        .share-img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+      .share-btn:hover {
+        background-color: #f5cb5c;
+        color: #fff;
+        .share-text {
+          margin-left: 5px;
+          font-size: 14px;
+        }
+        .share-img {
+          filter: sepia();
+        }
+      }
+    }
+  }
+  .usermanagments-tab {
+    margin-top: 48px;
+    margin-left: 128px;
+    .template-Tabs {
+      .ant-tabs-ink-bar {
+        background: #f5cb5c;
+        height: 3px !important;
+      }
+      .ant-tabs-nav-wrap {
+        border-bottom: 1px solid #e1e1e1;
+      }
+      .ant-tabs-tab-active {
+        .ant-tabs-tab-btn {
+          font: normal normal bold 18px/22px Century Gothic;
+          letter-spacing: 0px;
+          color: #f5cb5c !important;
+        }
+      }
+      .ant-tabs-tab-btn {
+        font-size: 16px;
+        color: #242423 !important;
+      }
+    }
+  }
+}
+.template-Grid {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: repeat(3, 378px);
+  gap: 28px;
+  .templateCard {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ccd5e2;
+    border-radius: 10px;
+    overflow: hidden;
+    .templateImg {
+      width: 100%;
+      object-fit: fill;
+      height: 200px;
+      border-radius: 8px;
+    }
+
+    .cardActions {
+      position: absolute;
+      width: 100%;
+      height: 85px;
+      bottom: 0px;
+      display: none;
+
+      .cardBtn {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        height: 85px;
+        align-items: center;
+        background-color: #24242355;
+        .btn-primary_ {
+          width: 147px;
+          height: 46px;
+          background: #f5cb5c;
+          border-radius: 4px !important;
+          border-color: transparent;
+          color: white;
+          cursor: pointer !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+        }
+      }
+    }
+    &:hover {
+      .cardActions {
+        display: block !important;
+      }
+      .templateImg {
+        transform: scale(1.1);
+        transition: all 0.2s;
+      }
+    }
+  }
+}
+.ant-tabs-tab {
+  box-shadow: none;
+}
+
+//  Responsivness code
+
+@media (min-width: 360px) and (max-width: 768px) {
+  .templates-index {
+    .bread {
+      padding-left: 20px;
+      padding-top: 54px;
+    }
+    .template-heading {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      p {
+        text-align: center;
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .templates-details {
+    background-color: #f5f8f6;
+    .page-data {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 50px;
+
+      .search-bar {
+        width: 60%;
+        height: 50px;
+        margin-top: 18px;
+        border-radius: 4px;
+        margin-left: 0;
+        opacity: 1;
+        padding-left: 20px;
+        ::placeholder {
+          color: #5a5a5a;
+        }
+      }
+      .select-inputs {
+        display: flex;
+        gap: 13px;
+        padding-top: 18px;
+        padding-right: 0;
+        padding-left: 20px;
+        .select-custome-input1 {
+          gap: 2rem;
+          width: 100%;
+          height: 40px;
+        }
+        .select-custome-input2 {
+          gap: 2rem;
+          width: 100%;
+          height: 40px;
+        }
+        .select-custome-input3 {
+          gap: 2rem;
+          width: 117px;
+          height: 40px;
+        }
+        .share-btn {
+          width: 70px;
+          height: 40px;
+          transition: all 0.3s ease;
+          border: 1px solid #cfcfcf;
+          border-radius: 4px;
+          opacity: 1;
+          display: none;
+
+          .share-img {
+            width: 18px;
+            height: 18px;
+          }
+        }
+        .share-btn:hover {
+          background-color: #f5cb5c;
+          color: #fff;
+          .share-text {
+            margin-left: 5px;
+            font-size: 14px;
+          }
+        }
+      }
+      .sm-share-btn {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        margin-right: 40px;
+        transition: all 0.3s ease;
+        border: 1px solid #cfcfcf;
+        border-radius: 4px;
+        background-color: #f5cb5c;
+        color: #fff;
+        opacity: 1;
+        .share-text {
+          margin-left: 5px;
+          font-size: 14px;
+        }
+        .share-img {
+          width: 18px;
+          height: 18px;
+          filter: sepia(1);
+        }
+      }
+    }
+    .usermanagments-tab {
+      margin-top: 48px;
+      margin-left: 20px;
+      .template-Tabs {
+        .ant-tabs-ink-bar {
+          background: #f5cb5c;
+          height: 3px !important;
+        }
+        .ant-tabs-nav-wrap {
+          border-bottom: 1px solid #e1e1e1;
+        }
+        .ant-tabs-tab-active {
+          .ant-tabs-tab-btn {
+            font: normal normal bold 18px/22px Century Gothic;
+            letter-spacing: 0px;
+            color: #f5cb5c !important;
+          }
+        }
+        .ant-tabs-tab-btn {
+          font-size: 16px;
+          color: #242423 !important;
+        }
+      }
+    }
+  }
+
+  .template-Grid {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-right: 20px;
+    .templateCard {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #ccd5e2;
+      border-radius: 10px;
+      overflow: hidden;
+      .templateImg {
+        width: 100%;
+        object-fit: fill;
+        height: 200px;
+      }
+
+      .cardActions {
+        position: absolute;
+
+        width: 100%;
+        height: 85px;
+        bottom: 0px;
+        display: none;
+
+        .cardBtn {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          height: 85px;
+          align-items: center;
+          background-color: #24242355;
+          .btn-primary_ {
+            width: 147px;
+            height: 46px;
+            background: #f5cb5c;
+            border-radius: 4px;
+            border-color: transparent;
+            color: white;
+            cursor: pointer !important;
+          }
+        }
+      }
+      &:hover {
+        .cardActions {
+          display: block !important;
+        }
+        .templateImg {
+          transform: scale(1.1);
+          transition: all 0.2s;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .templates-index {
+    .bread {
+      padding-left: 20px;
+      padding-top: 54px;
+    }
+    .template-heading {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      p {
+        text-align: center;
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .templates-details {
+    background-color: #f5f8f6;
+    .page-data {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 50px;
+
+      .sm-share-btn {
+        display: none;
+      }
+
+      .search-bar {
+        width: 40%;
+        height: 40px;
+        margin-top: 18px;
+        border-radius: 4px;
+        margin-left: 0;
+        opacity: 1;
+        padding-left: 20px;
+        ::placeholder {
+          color: #5a5a5a;
+        }
+      }
+      .select-inputs {
+        display: flex;
+        gap: 13px;
+        padding-top: 18px;
+        padding-right: 20px;
+        .select-custome-input1 {
+          gap: 2rem;
+          width: 100%;
+          height: 40px;
+        }
+        .select-custome-input2 {
+          gap: 2rem;
+          width: 100%;
+          height: 40px;
+        }
+        .select-custome-input3 {
+          gap: 2rem;
+          width: 117px;
+          height: 40px;
+        }
+      }
+    }
+    .usermanagments-tab {
+      margin-top: 48px;
+      margin-left: 20px;
+    }
+  }
+
+  .template-Grid {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-right: 20px;
+    .templateCard {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #ccd5e2;
+      border-radius: 10px;
+      overflow: hidden;
+      .templateImg {
+        width: 100%;
+        object-fit: fill;
+        height: 200px;
+      }
+      .cardActions {
+        position: absolute;
+        width: 100%;
+        height: 85px;
+        bottom: 0px;
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .templates-index {
+    .bread {
+      padding-left: 72px;
+      padding-top: 54px;
+    }
+    .template-heading {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+
+      p {
+        text-align: center;
+        width: 100%;
+        padding-right: 100px;
+        padding-left: 100px;
+      }
+    }
+  }
+
+  .templates-details {
+    background-color: #f5f8f6;
+    .page-data {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 50px;
+      padding-left: 50px;
+      padding-right: 50px;
+
+      .search-bar {
+        width: 40%;
+        height: 40px;
+        margin-top: 18px;
+        border-radius: 4px;
+        margin-left: 0;
+        opacity: 1;
+        padding-left: 20px;
+        ::placeholder {
+          color: #5a5a5a;
+        }
+      }
+      .select-inputs {
+        display: flex;
+        gap: 13px;
+        padding-top: 18px;
+        padding-right: 20px;
+        .select-custome-input1 {
+          gap: 2rem;
+          width: 100%;
+          height: 40px;
+        }
+        .select-custome-input2 {
+          gap: 2rem;
+          width: 100%;
+          height: 40px;
+        }
+        .select-custome-input3 {
+          gap: 2rem;
+          width: 117px;
+          height: 40px;
+        }
+      }
+      .sm-share-btn {
+        display: none;
+      }
+    }
+    .usermanagments-tab {
+      margin-top: 48px;
+      margin-left: 100px;
+      padding-right: 100px;
+    }
+  }
+
+  .template-Grid {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-right: 20px;
+    .templateCard {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #ccd5e2;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  .sm-share-btn {
+    display: none;
+  }
+  .template-Grid {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding-right: 20px;
+    .templateCard {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #ccd5e2;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+}

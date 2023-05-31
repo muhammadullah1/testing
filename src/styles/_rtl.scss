@@ -1,0 +1,510 @@
+[dir="rtl"] {
+  .slick-next {
+    left: 25px;
+  }
+  .slick-prev {
+    right: 5px;
+  }
+
+  .sidebar {
+    div {
+      padding-bottom: 34px;
+      margin-left: 0px;
+      margin-right: 17px;
+    }
+    p {
+      margin-left: 0px;
+      margin-right: 17px;
+    }
+    ul {
+      li {
+        a {
+          padding-left: 0px;
+          padding-right: 15px;
+        }
+      }
+      li.active::before {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+  .content {
+    flex: 1 !important;
+    margin-left: 0px !important;
+    margin-right: 264px !important;
+    .action-edit-icon {
+      margin-left: 15px;
+      margin-right: 0px;
+    }
+    .graph-icon {
+      margin-right: 0px;
+      margin-left: 1rem;
+    }
+    .orders-charges-adjustment-from {
+      margin-right: 1.5rem;
+    }
+    .secondary--btn {
+      margin-left: 0px;
+      margin-right: 1.5rem;
+      width: 6rem;
+    }
+  }
+
+  //client login side 
+  .client-login {
+    .clientlogin-body::before {
+      width: 800px;
+      min-height: 134vh;
+      position: absolute;
+      content: "";
+      background-color: #e8eddf;
+      z-index: -1;
+      top: 0px;
+      transform: rotate(-15deg); /* Update rotation to negative value */
+      border-top-left-radius: 130px; /* Update border radius property */
+      right: -148px; /* Update left to right */
+    }
+
+    .clientlogin-body::after {
+      width: 800px;
+      min-height: 134vh;
+      position: absolute;
+      content: "";
+      background-color: #f5cb5c;
+      z-index: -1;
+      top: 0px;
+      transform: rotate(-24deg); /* Update rotation to negative value */
+      border-top-left-radius: 130px; /* Update border radius property */
+      right: -303px; /* Update left to right */
+    }
+  }
+  
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    .clientlogin-body::before {
+      width: 300px;
+      min-height: 100vh;
+      position: absolute;
+      content: "";
+      background-color: #e8eddf;
+      z-index: -1;
+      top: 43rem;
+      transform: rotate(-15deg); /* Changed to negative value for RTL */
+      border-top-left-radius: 130px; /* Changed to border-top-left-radius */
+      right: -148px; /* Changed to right */
+    }
+
+    .clientlogin-body::after {
+      width: 300px;
+      min-height: 100vh;
+      position: absolute;
+      content: "";
+      background-color: #f5cb5c;
+      z-index: -1;
+      top: 42rem;
+      transform: rotate(-24deg); /* Changed to negative value for RTL */
+      border-top-left-radius: 130px; /* Changed to border-top-left-radius */
+      right: -303px; /* Changed to right */
+    }
+  }
+
+  //layoput
+  .navbar {
+    .navbar-content {
+      .prime-logo {
+        padding-right: 72px;
+      }
+    }
+    .nav-left-btns {
+margin-left: 50px;
+    }
+  }
+
+  @media (max-width: 1020px) {
+    .navbar {
+      .navbar-content {
+        .prime-logo {
+          padding-right: 30px;
+        }
+      }
+      .nav-left-btns {
+  margin-left: 50px;
+      }
+    }
+  }
+
+@media (max-width: 767px) {
+.mobile-nav .sm-navepages {
+    display: flex;
+    flex-direction: column;
+    padding-top: 54px;
+    gap: 20px;
+    padding-right: 20px;
+}
+}
+@media (min-width: 360px) and (max-width: 767px) {
+.mobile-nav .sm-navepages .templates-child {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 30px; 
+    gap: 6px;
+}
+}
+
+  //home page
+  .custome-relative {
+    position: relative !important;
+    width: 100%;
+    .yellow-svg {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      right: 61rem;
+      left: 0rem;
+      top: -16rem;
+      svg {
+        transform: rotate(200deg) scale(1.1);
+        width: 100%;
+      }
+    }
+  }
+  .home {
+    .home-content {
+      margin-right: 72px;
+      padding-right: 0px;
+    }
+    .bg-c {
+      width: 100%;
+      position: relative;
+      height: 100vh;
+      .images {
+        width: 100%;
+        position: relative;
+        .elipse {
+          top: 4rem;
+          left: 6rem; /* Adjusted for RTL */
+        }
+
+        .image1 {
+          width: 90%;
+          height: 600px;
+        }
+
+        .image2 {
+          width: 600px;
+          height: 250px;
+          position: absolute;
+          z-index: 11;
+          padding-right: 150px;
+          padding-left: 50px;
+          top: -30px;
+          left: 80px; /* Adjusted for RTL */
+        }
+
+        .image3 {
+          width: 570px;
+          height: 230px;
+          z-index: 11;
+          position: absolute;
+          bottom: -80px;
+          padding-left: 200px;
+          left: 50px; /* Adjusted for RTL */
+        }
+
+        .chat {
+          float: left; /* Adjusted for RTL */
+          right: auto; /* Adjusted for RTL */
+          left: 50px; /* Adjusted for RTL */
+        }
+      }
+
+      @keyframes DVD {
+        to {
+          right: 100%;
+          bottom: 100%;
+          transform: translate(300%, 300%);
+        }
+      }
+    }
+  }
+
+  // our collection
+  .templates {
+    .content-dev {
+      height: 530px;
+      width: 60%;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      opacity: 1;
+
+      .content {
+        .explore-btn::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #242423;
+          z-index: -1;
+          transform: translateX(-100%);
+          transition: transform 0.3s ease-in-out;
+        }
+
+        .explore-btn:hover > * {
+          color: white;
+        }
+
+        .explore-btn:hover::before {
+          transform: translateX(0);
+        }
+      }
+    }
+
+    .empty-dev {
+      position: relative;
+      width: 40%;
+      height: 530px;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      opacity: 1;
+
+      .imgs {
+        transition: 0.5s all ease-in-out;
+        position: absolute;
+        left: 0rem;
+        top: -7rem;
+        right: -44%;
+
+        .image1 {
+          z-index: 1000;
+          width: 100%;
+          height: 400px;
+        }
+
+        .image2 {
+          z-index: 10;
+          width: 100%;
+          height: 400px;
+        }
+
+        &:hover .image1 {
+          transition: 0.5s all ease-in-out;
+          transform: translateX(10%);
+          transform: scale(1.1);
+        }
+
+        &:hover .image2 {
+          transition: 0.5s all ease-in-out;
+          right: 15rem !important;
+          top: 8rem;
+        }
+      }
+    }
+  }
+
+  // templates breadcumbs
+  .templates-index {
+    .bread {
+      padding-right: 72px;
+      padding-top: 32px;
+    }
+  }
+
+  .templates-details {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  //templates caurosel
+  .first-page {
+    display: flex;
+    justify-content: space-between;
+    .carasoul {
+      position: relative;
+      z-index: 1000;
+      right: 70px;
+      width: 603px;
+      height: 374px;
+    }
+    .contents {
+      padding-right: 100px;
+    }
+  }
+
+
+  //our-collections
+  .collections .collection-heading {
+    margin-right: 113px;
+}
+  //buy-now
+  .buynow-parent {
+    .navbar {
+      .navbar-content {
+      }
+    }
+    .back-btn {
+      padding-right: 60px !important;
+      padding-left: auto !important;
+    }
+
+    .buynow-content {
+      .instruction-content {
+        padding-right: 72px !important;
+      }
+      .summary-content {
+        margin-right: 0px;
+        margin-left: 106px;
+        padding: 0 22px;
+      }
+    }
+  }
+
+//add to cart 
+.added-carts {
+  .cart-bread {
+    padding-right: 70px;
+  }
+  .title {
+    padding-right: 72px;
+    h1 {
+      // color: #f5cb5c;
+      font-size: 30px;
+    }
+  }
+
+  .carts {
+    margin-right: 72px;
+  }
+  // .sm-name-price {
+  //   display: none;
+  // }
+
+  .cart-img {
+    padding-top: 20px;
+  }
+
+  .remove-btn {
+    width: 98px;
+    height: 40px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    opacity: 1;
+    margin-left: 35px;
+
+    span {
+      color: #9e9e9e;
+    }
+  }
+}
+.your-cart .payment-section h1 {
+  padding-right: 65px;
+}
+
+
+// services-hero section
+.services-hero {
+  width: 93% !important;
+  margin-right: -0px !important;
+  margin-bottom: 300px !important;
+  border-radius: 0px 0px 0px 100px;
+  .service-heading {
+    text-align: right;
+  }
+  .service-desc {
+    text-align: right;
+  }
+  .img-dev {
+    .behind-img-dev {
+      position: relative !important;
+      left: -25rem !important;
+    }
+
+    .front-img-dev {
+      position: relative !important;
+      left: -5% !important;
+    }
+  }
+}
+
+// services-section
+
+.service-0-desc {
+  text-align: right;
+ 
+}
+
+
+.service-01 {
+  position: relative;
+  .service-01-dev {
+  
+    border-top-right-radius: 43px;
+    border-bottom-right-radius: 43px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    .service-01-img {
+      width: 100%;
+      height: 430px;
+      z-index: 10;
+      transform: translate(25%, 18%);
+      border-radius: 10px;
+    }
+  }
+
+  .make-booking-btn {
+    margin-right: 15rem;
+  }
+  .make-booking-btn-arrow {
+   transform: rotate(180deg);   
+  }
+}
+
+
+.service-02 {
+  position: relative;
+  .service-02-dev {
+    height: 576px;
+    background: #cfdbd5 0% 0% no-repeat padding-box;
+    border-top-left-radius: 43px;
+    border-bottom-left-radius: 43px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    opacity: 1;
+    .service-02-img {
+      width: 100%;
+      height: 430px;
+      transform: translate(-40%, 18%);
+      border-radius: 10px;
+    }
+  }
+  .make-booking-btn {
+    margin-right: 15rem;
+  }
+  .make-booking-btn-arrow {
+   transform: rotate(180deg);   
+  }
+}
+//create service request form arrow
+.services-back-arrow {
+  svg {
+    transform: rotate(180deg);
+  }
+}
+.payment-desc {
+text-align: right;
+}
+.payment-screen {
+  .payment-back-arrow {
+   svg {
+    transform: rotate(180deg);
+   } 
+  }
+}
+}

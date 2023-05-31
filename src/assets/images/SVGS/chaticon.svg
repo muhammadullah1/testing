@@ -1,0 +1,7 @@
+<svg id="Component_35_7" data-name="Component 35 – 7" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Ellipse_9" data-name="Ellipse 9" fill="#fff" stroke="#f5cb5c" stroke-width="1">
+    <circle cx="30" cy="30" r="30" stroke="none"/>
+    <circle cx="30" cy="30" r="29.5" fill="none"/>
+  </g>
+  <path id="chat-processing-outline" d="M17.016,3C8.757,3,2,8.376,2,15.013a10.839,10.839,0,0,0,4.129,8.259c0,.9-.631,3.259-4.129,6.757a16.569,16.569,0,0,0,9.716-3.754,19.157,19.157,0,0,0,5.3.751c8.259,0,15.016-5.376,15.016-12.013S25.275,3,17.016,3m0,21.023C10.379,24.023,5,19.983,5,15.013S10.379,6,17.016,6s12.013,4.039,12.013,9.01-5.376,9.01-12.013,9.01m7.508-7.508v-3h-3v3h3m-6.007,0v-3h-3v3h3m-6.007,0v-3h-3v3Z" transform="translate(12.905 13.277)" fill="#f5cb5c"/>
+</svg>

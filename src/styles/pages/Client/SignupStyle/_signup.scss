@@ -1,0 +1,471 @@
+.client-signup {
+  .clientsignup-body {
+    display: grid;
+    grid-template-columns: 504px 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 1066px;
+
+    min-height: 100vh;
+    margin: auto;
+
+    .bgContents-signup {
+      // padding-right: 80px;
+
+      p {
+        max-width: 409px;
+        // margin-left: 45px;
+        padding-top: 14px;
+      }
+
+      .signupprime {
+        width: 130px;
+        height: 80px;
+        margin-top: 20px;
+        float: right;
+        margin-right: 35px;
+      }
+
+      .bg-imag {
+        width: 686px;
+        height: 400px;
+      }
+    }
+
+    .signup-card {
+      padding: 5px 42px;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000005;
+      border: 1px solid #eeeeee;
+      border-radius: 6px;
+      width: 346px;
+      height: auto;
+      margin-left: 80px;
+
+      .spacedLetter {
+        letter-spacing: 4px;
+      }
+
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+      }
+
+      .signup-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+        padding-top: 10px;
+      }
+
+      .signup-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #9b9b9b;
+        padding-bottom: 10px;
+
+        a {
+          color: #f5cb5c;
+          padding: 7px;
+        }
+      }
+
+      .separator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .line {
+          height: 2px;
+          flex: 1;
+          background-color: #e2e2e2;
+        }
+
+        p {
+          padding: 10px;
+          margin-top: 0px;
+        }
+
+        // .empty-dev1 {
+        //     height: 3px;
+        //     flex: 1;
+        //     background-color: #000;
+        // }
+      }
+    }
+  }
+
+  .clientsignup-body::before {
+      width: 800px;
+      min-height: 134vh;
+      position: absolute;
+      content: "";
+      background-color: #E8EDDF;
+      z-index: -1;
+      top: 0px;
+      transform: rotate(250deg);
+      border-top-right-radius: 130px;
+      right: -280px;
+  }
+
+  .clientsignup-body::after {
+      width: 800px;
+      min-height: 134vh;
+      position: absolute;
+      content: "";
+      background-color: #F5CB5C;
+      z-index: -1;
+      top: 0px;
+      transform: rotate(240deg);
+      border-top-right-radius: 130px;
+      right: -400px;
+  }
+}
+
+//media query for less then 600px sxreen
+// @media (max-width: 600px) {
+//     .login-wrapper {
+//         .login-body {
+//             .login-heading {
+//                 width: 100%;
+//                 height: 78px;
+//                 //   font: normal normal 700 57px/78px Open Sans !important;
+//                 letter-spacing: 0px;
+//                 color: #011a3a;
+//                 opacity: 1;
+//                 margin-top: 5vh;
+//                 font-size: large;
+//             }
+
+//             .login-card {
+//                 padding: 36px 20px 41px 20px;
+//                 margin-top: 65px;
+//                 background: #ffffff 0 0 no-repeat padding-box;
+//                 box-shadow: 0 1px 20px #00000014;
+//                 width: 100%;
+//                 height: 406px;
+
+//                 input[type="text"] {
+//                     height: 40px;
+//                 }
+
+//                 input[type="password"] {
+//                     height: 40px !important;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// Responsivness
+
+@media (min-width: 360px) and (max-width: 768px) {
+  .client-signup {
+    .clientsignup-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 100vh;
+      margin: auto;
+
+      .bgContents-signup {
+        // padding-right: 80px;
+
+        p {
+          max-width: 409px;
+          // margin-left: 45px;
+          padding-top: 14px;
+        }
+
+        .signupprime {
+          width: 130px;
+          height: 80px;
+          margin-top: 20px;
+          float: right;
+          margin-right: 35px;
+          display: none;
+        }
+
+        .bg-imag {
+          width: 100%;
+          height: 350px;
+        }
+      }
+
+      .signup-card {
+        padding: 5px 42px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000005;
+        border: 1px solid #eeeeee;
+        border-radius: 6px;
+        width: 346px;
+        height: auto;
+        margin-left: 0px;
+        margin-top: 50px;
+      }
+    }
+
+    // .clientsignup-body::before {
+    //     width: 800px;
+    //     min-height: 134vh;
+    //     position: absolute;
+    //     content: "";
+    //     background-color: #E8EDDF;
+    //     z-index: -1;
+    //     top: 0px;
+    //     transform: rotate(250deg);
+    //     border-top-right-radius: 130px;
+    //     right: -280px;
+    // }
+
+    // .clientsignup-body::after {
+    //     width: 800px;
+    //     min-height: 134vh;
+    //     position: absolute;
+    //     content: "";
+    //     background-color: #F5CB5C;
+    //     z-index: -1;
+    //     top: 0px;
+    //     transform: rotate(240deg);
+    //     border-top-right-radius: 130px;
+    //     right: -400px;
+    // }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .client-signup {
+    .clientsignup-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 100vh;
+      margin: auto;
+
+      .bgContents-signup {
+        // padding-right: 80px;
+
+        p {
+          max-width: 409px;
+          // margin-left: 45px;
+          padding-top: 14px;
+        }
+
+        .signupprime {
+          width: 130px;
+          height: 80px;
+          margin-top: 20px;
+          float: right;
+          margin-right: 35px;
+          display: none;
+        }
+
+        .bg-imag {
+          width: 100%;
+          height: 350px;
+        }
+      }
+
+      .signup-card {
+        padding: 5px 42px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000005;
+        border: 1px solid #eeeeee;
+        border-radius: 6px;
+        width: 380px;
+        height: auto;
+        margin-left: 0px;
+        margin-top: 50px;
+      }
+    }
+
+    // .clientsignup-body::before {
+    //     width: 800px;
+    //     min-height: 134vh;
+    //     position: absolute;
+    //     content: "";
+    //     background-color: #E8EDDF;
+    //     z-index: -1;
+    //     top: 0px;
+    //     transform: rotate(250deg);
+    //     border-top-right-radius: 130px;
+    //     right: -280px;
+    // }
+
+    // .clientsignup-body::after {
+    //     width: 800px;
+    //     min-height: 134vh;
+    //     position: absolute;
+    //     content: "";
+    //     background-color: #F5CB5C;
+    //     z-index: -1;
+    //     top: 0px;
+    //     transform: rotate(240deg);
+    //     border-top-right-radius: 130px;
+    //     right: -400px;
+    // }
+  }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .client-signup {
+    .clientsignup-body {
+      display: grid;
+      grid-template-columns: 504px 1fr;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 100vh;
+      margin: auto;
+      padding-left: 50px;
+
+      .bgContents-signup {
+        margin-top: 150px;
+        p {
+          max-width: 409px;
+          // margin-left: 45px;
+          padding-top: 14px;
+        }
+
+        .signupprime {
+          width: 130px;
+          height: 80px;
+          margin-top: 20px;
+          float: right;
+          margin-right: 35px;
+          display: block;
+        }
+
+        .bg-imag {
+          width: 100%;
+          height: 500px;
+        }
+      }
+
+      .signup-card {
+        padding: 5px 42px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000005;
+        border: 1px solid #eeeeee;
+        border-radius: 6px;
+        width: 380px;
+        height: auto;
+        margin-left: 0px;
+        margin-top: 50px;
+      }
+    }
+
+    .clientsignup-body::before {
+      width: 800px;
+      min-height: 134vh;
+      position: absolute;
+      content: "";
+      background-color: #e8eddf;
+      z-index: -1;
+      top: 0px;
+      transform: rotate(250deg);
+      border-top-right-radius: 130px;
+      right: -280px;
+    }
+
+    .clientsignup-body::after {
+      width: 800px;
+      min-height: 134vh;
+      position: absolute;
+      content: "";
+      background-color: #f5cb5c;
+      z-index: -1;
+      top: 0px;
+      transform: rotate(240deg);
+      border-top-right-radius: 130px;
+      right: -300px;
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+    .client-signup {
+        .clientsignup-body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          min-height: 100vh;
+          margin: auto;
+          padding-left: 50px;
+          justify-content: space-between;
+    
+          .bgContents-signup {
+            display: flex;
+            flex-direction: column;
+            margin-top: 150px;
+            padding-right: 50px;
+            p {
+              max-width: 409px;
+              // margin-left: 45px;
+              padding-top: 14px;
+            }
+    
+            .signupprime {
+              width: 130px;
+              height: 80px;
+              margin-top: 20px;
+              float: right;
+              margin-right: 35px;
+              display: block;
+              align-self: self-end;
+            }
+    
+            .bg-imag {
+              width: 800px;
+              height: 500px;
+            }
+          }
+    
+          .signup-card {
+            padding: 5px 42px;
+            background: #ffffff 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000005;
+            border: 1px solid #eeeeee;
+            border-radius: 6px;
+            width: 380px;
+            height: auto;
+            margin-left: 200px;
+            margin-top: 50px;
+          }
+        }
+    
+        .clientsignup-body::before {
+          width: 800px;
+          min-height: 134vh;
+          position: absolute;
+          content: "";
+          background-color: #e8eddf;
+          z-index: -1;
+          top: -150px;
+          transform: rotate(250deg);
+          border-top-right-radius: 130px;
+          right: -280px;
+        }
+    
+        .clientsignup-body::after {
+          width: 800px;
+          min-height: 134vh;
+          position: absolute;
+          content: "";
+          background-color: #f5cb5c;
+          z-index: -1;
+          top: -10px;
+          transform: rotate(250deg);
+          border-top-right-radius: 130px;
+          right: -300px;
+        }
+      }
+}

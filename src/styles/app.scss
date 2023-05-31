@@ -1,0 +1,139 @@
+// fonts cdn
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  // overflow-x: hidden;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+// import Neusa Next Std font
+
+//
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap");
+
+body #app {
+  height: 100%;
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  margin-bottom: 5px !important;
+  font-family: "Poppins";
+}
+
+a {
+  color: #707070;
+  font-family: "Poppins";
+}
+
+a:hover {
+  color: #707070;
+}
+
+textarea {
+  resize: none !important;
+}
+
+.rdt_Table {
+  padding: 30px 20px;
+}
+
+.rdt_Table .rdt_TableRow:hover {
+  background-color: rgb(235, 235, 235);
+  // color: #fff;
+}
+
+.rdt_TableCell:last-child {
+  border-right: 1px solid #eeeeee !important;
+}
+
+// rdt_TableRow
+.rdt_TableRow {
+  border-bottom: 1px solid #eeeeee !important;
+}
+
+.rdt_TableRow:last-child {
+  border-bottom: 1px solid #eeeeee !important;
+}
+
+.rdt_TableHeadRow:last-child {
+  border-right: 1px solid #eeeeee !important;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../assets/font/CenturyGothic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Century Gothic", sans-serif;
+}
+.custome-relative {
+  position: relative;
+  overflow: hidden !important;
+  .yellow-svg {
+    position: absolute;
+    top: -16rem;
+    right: -40rem;
+  }
+}
+.chat-withus {
+  display: inline-block;
+  color: black;
+  border-radius: 15px;
+  padding: 15px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 1000;
+}
+@media (min-width: 340px) and (max-width: 768px) {
+  .chat-withus {
+    display: none;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .custome-relative {
+    position: relative;
+    overflow: hidden !important;
+    .yellow-svg {
+      position: absolute;
+      top: -16rem;
+      right: -44rem;
+    }
+  }
+}
+
+@import "reset";
+@import "typography";
+@import "antd";
+@import "common";
+@import "pages/login";
+@import "pages/layout";
+@import "pages/settings";
+@import "pages/dashbaord";
+@import "pages/Client/navbar";
+@import "pages/Client/homeLandingPage";
+@import "pages/Client/ourcollections";
+@import "pages/Client/aboutprime";
+@import "pages/Client/footer";
+@import "pages/Client/LoginStyle/clientlogin";
+@import "pages/Client/SignupStyle/signup";
+@import "pages/Client/Templates/templates";
+@import "pages/Client/Buynow/buynow";
+@import "pages/Client/Cart/cart";
+@import "pages/Client/DetailDashbaord/detaildashbaord";
+@import "pages/Client/ServicesStyles/services";
+@import "./_rtl.scss";

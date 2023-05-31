@@ -1,0 +1,89 @@
+.login-wrapper {
+  .login-body {
+    display: grid;
+    grid-template-columns: 844px 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 1366px;
+
+    min-height: 100vh;
+    margin: auto;
+
+    .bgContent {
+      p {
+        max-width: 409px;
+        margin-left: 45px;
+      }
+    }
+
+    .login-card {
+      padding: 45px 42px;
+
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000005;
+      border: 1px solid #eeeeee;
+      border-radius: 6px;
+      width: 346px;
+      height: 526px;
+      .spacedLetter
+      {
+        letter-spacing: 4px;
+      }
+    }
+  }
+  .login-body::before {
+    width: 800px;
+    min-height: 134vh;
+    position: absolute;
+    content: "";
+    background-color: #E8EDDF;
+    z-index: -1;
+    top: 0px;
+    transform: rotate(15deg);
+    border-top-right-radius: 130px;
+    left: -148px;
+  }
+  .login-body::after {
+    width: 800px;
+    min-height: 134vh;
+    position: absolute;
+    content: "";
+    background-color: #F5CB5C;
+    z-index: -1;
+    top: 0px;
+    transform: rotate(24deg);
+    border-top-right-radius: 130px;
+    left: -303px;
+  }
+}
+//media query for less then 600px sxreen
+@media (max-width: 600px) {
+  .login-wrapper {
+    .login-body {
+      .login-heading {
+        width: 100%;
+        height: 78px;
+        //   font: normal normal 700 57px/78px Open Sans !important;
+        letter-spacing: 0px;
+        color: #011a3a;
+        opacity: 1;
+        margin-top: 5vh;
+        font-size: large;
+      }
+      .login-card {
+        padding: 36px 20px 41px 20px;
+        margin-top: 65px;
+        background: #ffffff 0 0 no-repeat padding-box;
+        box-shadow: 0 1px 20px #00000014;
+        width: 100%;
+        height: 406px;
+        input[type="text"] {
+          height: 40px;
+        }
+        input[type="password"] {
+          height: 40px !important;
+        }
+      }
+    }
+  }
+}

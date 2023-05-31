@@ -1,0 +1,605 @@
+.navbar {
+  display: flex;
+
+  .navbar-content {
+    display: flex;
+
+    .prime-logo {
+      padding-left: 72px;
+      padding-top: 23px;
+      img {
+        width: 150px;
+        height: 50px;
+      }
+      .hamberger {
+        display: hidden;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .pages {
+      margin-top: 39px;
+      margin-left: 102px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      color: #5a5a5a;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .button {
+    margin-right: 50px;
+    width: 139px;
+    height: 42px;
+    margin-top: 20px;
+    z-index: 10;
+    border: 1px solid #ffffff;
+    border-radius: 4px !important;
+    opacity: 1;
+    background: transparent;
+    color: white;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .border-white {
+    border: 1px solid #f5cb5c !important;
+    color: #f5cb5c !important;
+    &:hover {
+      border: none !important;
+    }
+  }
+  .logout {
+    width: 105px !important;
+    height: 42px !important;
+    background: #f1f1f1 0% 0% no-repeat padding-box !important;
+    border: 1px solid #e1e1e1 !important;
+    border-radius: 4px !important;
+    opacity: 1;
+    margin-right: 98px;
+    margin-top: 20px;
+    span {
+      color: #c4c3c3;
+    }
+  }
+
+  .border-white::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f5cb5c !important;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  .border-white:hover::before {
+    transform: translateX(0);
+  }
+
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #292929;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  .button:hover {
+    color: white !important;
+    border: none;
+  }
+
+  .button:hover::before {
+    transform: translateX(0);
+  }
+  .nav-left-btns {
+    display: flex;
+    position: relative;
+    z-index: 100;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+      padding-top: 20px;
+    }
+    .services-lngbtn {
+      margin-right: 81px;
+    }
+  }
+}
+.ant-dropdown-menu-title-content {
+  a {
+    text-decoration: none !important;
+  }
+}
+
+// Below are Responsiveness code
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .navbar {
+    display: flex;
+    box-shadow: 0px 3px 6px #00000017;
+    opacity: 1;
+    width: 100%;
+    .navbar-content {
+      display: flex;
+      width: 100%;
+
+      .prime-logo {
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 23px;
+        display: flex;
+        justify-content: space-between;
+
+        .hamberger {
+          display: block;
+          margin-right: 22px;
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      .pages {
+        margin-top: 39px;
+        margin-left: 102px;
+        display: flex;
+        gap: 40px;
+        color: #5a5a5a;
+        display: none;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .button {
+      margin-right: 50px;
+      width: 139px;
+      height: 42px;
+      margin-top: 20px;
+      z-index: 10;
+      border: 1px solid #ffffff;
+      border-radius: 14px;
+      opacity: 1;
+      background: transparent;
+      color: white;
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .button::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #292929;
+      z-index: -1;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .button:hover {
+      color: white;
+    }
+
+    .button:hover::before {
+      transform: translateX(0);
+    }
+    .nav-left-btns {
+      display: flex;
+      position: relative;
+      z-index: 100;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      a {
+        text-decoration: none;
+        padding-top: 20px;
+      }
+    }
+  }
+  .ant-dropdown-menu-title-content {
+    a {
+      text-decoration: none !important;
+    }
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    .logo-lng {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .cross-icon {
+      display: flex;
+      align-self: self-end;
+      width: 18px;
+      height: 18px;
+    }
+    .sm-navepages {
+      display: flex;
+      flex-direction: column;
+      padding-top: 54px;
+      gap: 20px;
+      padding-right: 80px;
+
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        border-bottom: 1px solid #ebebeb;
+        padding-bottom: 15px;
+      }
+      .tmplt {
+        border-bottom: none;
+      }
+      .templates-child {
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+        padding-right: 100px;
+        gap: 6px;
+      }
+    }
+  }
+}
+.ant-drawer-content-wrapper {
+  height: 100vh !important;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    display: flex;
+    box-shadow: 0px 3px 6px #00000017;
+    opacity: 1;
+    width: 100%;
+    .navbar-content {
+      display: flex;
+
+      .prime-logo {
+        padding-left: 20px;
+        padding-top: 23px;
+        display: flex;
+        justify-content: space-between;
+        .logo {
+          width: 130px;
+          height: 50px;
+        }
+        .hamberger {
+          display: block;
+          margin-right: 22px;
+          display: none;
+        }
+      }
+
+      .pages {
+        margin-top: 39px;
+        margin-left: 10px;
+        display: flex;
+        gap: 15px;
+        color: #5a5a5a;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .button {
+      margin-right: 30px;
+      width: 100px;
+      height: 42px;
+      margin-top: 20px;
+      z-index: 10;
+      border: 1px solid #292929;
+      border-radius: 14px;
+      opacity: 1;
+      background: transparent;
+      color: #292929;
+      border-radius: 4px;
+    }
+
+    .nav-left-btns {
+      display: flex;
+      position: relative;
+      z-index: 100;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+      .lng-dropdown {
+        padding-top: 15px;
+      }
+      a {
+        text-decoration: none;
+        padding-top: 20px;
+      }
+    }
+  }
+  .ant-dropdown-menu-title-content {
+    a {
+      text-decoration: none !important;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .navbar {
+    display: flex;
+    opacity: 1;
+    width: 100%;
+    .navbar-content {
+      display: flex;
+
+      .prime-logo {
+        padding-left: 70px;
+        padding-top: 23px;
+        .logo {
+          width: 120px;
+          height: 50px;
+        }
+        .hamberger {
+          display: none;
+        }
+      }
+
+      .pages {
+        margin-top: 39px;
+        margin-left: 71px;
+        display: flex;
+        gap: 30px;
+        color: #5a5a5a;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .button {
+      margin-right: 50px;
+      width: 130px;
+      height: 42px;
+      margin-top: 20px;
+      z-index: 10;
+      border: 1px solid #292929;
+      border-radius: 14px;
+      opacity: 1;
+      background: transparent;
+      color: #292929;
+      border-radius: 4px;
+    }
+
+    .nav-left-btns {
+      display: flex;
+      position: relative;
+      z-index: 100;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+      a {
+        text-decoration: none;
+        padding-top: 20px;
+      }
+      .lng-dropdown {
+        margin-top: 15px;
+      }
+    }
+  }
+  .ant-dropdown-menu-title-content {
+    a {
+      text-decoration: none !important;
+    }
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .navbar {
+    display: flex;
+    opacity: 1;
+    width: 100%;
+    .navbar-content {
+      display: flex;
+
+      .prime-logo {
+        width: 100%;
+        padding-left: 72px;
+        padding-top: 30px;
+        display: flex;
+        .logo {
+          width: 110px;
+          height: 41px;
+        }
+        .hamberger {
+          display: block;
+          margin-right: 22px;
+          display: none !important;
+        }
+      }
+
+      .pages {
+        margin-top: 39px;
+        margin-left: 71px;
+        display: flex;
+        gap: 40px;
+        color: #5a5a5a;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .button {
+      margin-right: 81px;
+      width: 139px;
+      height: 42px;
+      margin-top: 20px;
+      z-index: 10;
+      border: 1px solid #ffffff;
+      border-radius: 14px;
+      opacity: 1;
+      background: transparent;
+      color: white;
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .button::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #292929;
+      z-index: -1;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .button:hover {
+      color: white;
+    }
+
+    .button:hover::before {
+      transform: translateX(0);
+    }
+    .nav-left-btns {
+      display: flex;
+      position: relative;
+      z-index: 100;
+      gap: 32px;
+      justify-content: center;
+      align-items: center;
+      a {
+        text-decoration: none;
+        padding-top: 20px;
+      }
+      .lng-dropdown {
+        padding-top: 15px;
+      }
+    }
+  }
+  .ant-dropdown-menu-title-content {
+    a {
+      text-decoration: none !important;
+    }
+  }
+}
+
+@media (min-width: 1536px) {
+  .navbar {
+    display: flex;
+    opacity: 1;
+    width: 100%;
+    .navbar-content {
+      display: flex;
+
+      .prime-logo {
+        width: 100%;
+        padding-left: 72px;
+        padding-top: 23px;
+        display: flex;
+        .logo {
+          width: 130px;
+          height: 50px;
+        }
+        .hamberger {
+          display: none !important;
+        }
+      }
+
+      .pages {
+        margin-top: 39px;
+        margin-left: 71px;
+        display: flex;
+        gap: 40px;
+        color: #5a5a5a;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .button {
+      margin-right: 81px;
+      width: 139px;
+      height: 42px;
+      margin-top: 20px;
+      z-index: 10;
+      border: 1px solid #ffffff;
+      border-radius: 14px;
+      opacity: 1;
+      background: transparent;
+      color: white;
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .button::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #292929;
+      z-index: -1;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .button:hover {
+      color: white;
+    }
+
+    .button:hover::before {
+      transform: translateX(0);
+    }
+    .nav-left-btns {
+      display: flex;
+      position: relative;
+      z-index: 100;
+      gap: 32px;
+      justify-content: center;
+      align-items: center;
+      a {
+        text-decoration: none;
+        padding-top: 20px;
+      }
+      .lng-dropdown {
+        padding-top: 15px;
+      }
+    }
+  }
+  .ant-dropdown-menu-title-content {
+    a {
+      text-decoration: none !important;
+    }
+  }
+}
